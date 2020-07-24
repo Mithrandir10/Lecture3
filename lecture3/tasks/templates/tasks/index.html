@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Letters</title>
+</head>
+<body>
+    <ul>{% for let in letters %}
+    <li>{{let}}</li>
+    {% endfor %}
+    </ul>
+    {% block body %}
+    {% endblock %}
+    <form action="{% url 'greek' %}" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Sub</button>
+    </form>
+    <a href="{% url 'club' %}">FCB</a>
+    </body>

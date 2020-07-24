@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+  <html>
+      <link rel="stylesheet" href="{% static 'styles/fcbsty.css' %}">
+      <link rel="stylesheet" href="{% static 'styles/bootstrap.css' %}">
+      <head>
+          <h1>FC Barcelona</h1>
+      </head>
+      <body>
+          <div id="img">
+          <img src="{% static 'styles/fcb.png' %}" height="300px" width="300px">
+          </div>
+<div class="squad">
+    <h2>SQUAD</h2>
+    <ul>
+        <li id="Cap">Lionel Messi</li>
+        <li>Luis Suarez</li>
+        <li id="GK">Ter Stegen</li>
+        <li>Gerard Pique</li>
+        <li>Clement Lenglet</li>
+        <li>Jordi Alba</li>
+        <li>Nelson Semedo</li>
+        <li>Frenkie De Jong</li>
+        <li>Antoine Greizmann</li>
+        <li>Sergio Busquets</li>
+        <li>Ivan Rakitic</li>
+    </ul>
+</div>
+<button type="button" class="btn btn-light"><a href="{% url 'bday:birthday' %}"">Back</a></button>
+      </body>
+  </html>  
